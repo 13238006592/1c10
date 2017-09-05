@@ -44,7 +44,7 @@ class Home extends Component{
 				<em>一传十传百</em>
 
 				<b>
-					<i></i><span>我的</span>
+					<i className="iconfont icon-denglu"></i><span>我的</span>
 				</b>
 			</nav>
 			<div id="search">
