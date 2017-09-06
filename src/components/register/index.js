@@ -18,10 +18,11 @@ class register extends Component{
 			</div>
 
 			<div className="reg1">
+				<div id="err-ms">手机号码格式不正确</div>
 				<div className="code-area">
 					<a href="javascript:;" className="btns">获取验证码</a>
 					<div className="input">
-						<input type="tel" placeholder="请输入11位手机号码" name="mobile"/>
+						<input type="tel" placeholder="请输入11位手机号码" name="mobile" id="tel"/>
 					</div>
 					<div className="input-2">
 						<input type="tel" placeholder="请输入收到的短信验证码" name="mobile"/>
@@ -48,5 +49,18 @@ class register extends Component{
 		</div>
 	}	
 }
+
+//验证用户名：
+	
+		function checkPhonenum(){
+			var tel = document.getElementById("tel").value;
+			var telRegex = /^1[3,4,5,7,8]\d{9}$/;
+			if(!telRegex.test(tel)){
+				document.getElementById().innerHTML = "手机号码格式不正确";
+			} else {
+
+			}
+		}
+	
 
 export default register;

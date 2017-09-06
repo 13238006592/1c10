@@ -25,10 +25,10 @@ class Login extends Component{
 
 			
 			<form className="account">
-				<div>
+				<div className="box">
 					<input type="text" placeholder="手机号/邮箱/用户名" name="name"/>
 				</div>
-				<div>
+				<div className="box">
 					<input type="password" placeholder="密码" name="pw"/>
 				</div>
 				<section className="btn">
@@ -54,15 +54,15 @@ class Login extends Component{
 			// </form>
 			}
 			
-
+			
 			<section className="login-footer">
-				<div className="l">——————&nbsp;&nbsp;&nbsp;使用下列账号登录&nbsp;&nbsp;&nbsp;——————</div>
+				<div className="l">———&nbsp;使用下列账号登录&nbsp;———</div>
 				<a className="other-qq" href="">
 					<img src="../assets/img/qq_login.png"/>
 					<span>QQ账号登录</span>
 				</a>
 			</section>
-
+			
 		</div>
 	}	
 }

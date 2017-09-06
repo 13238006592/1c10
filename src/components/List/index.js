@@ -36,7 +36,7 @@ class List extends Component{
 	render() {
 		return <div id="list">
 
-			<div className="list-header">
+			<div className="list-header clear">
 
 				<i className="iconfont icon-fanhui"></i>
 				<input type="text" placeholder="请输入您想找的优惠"/>
@@ -44,7 +44,7 @@ class List extends Component{
 				
 			</div>
 			
-			<ul className="main">
+			<ul className="main clear">
 				<li className="main-list">
 					美食
 					<i></i>
@@ -129,13 +129,17 @@ class List extends Component{
 				<li key={item.id}>
 					<img src={item.image_1280}/>
 					<div className="left">
-						<h3>摩卡私营158元晚2-3人</h3>
-						<p>窗口撒放哪里睡觉富</p>
+						<h3>{item.store_name}{item.msg_name}</h3>
+						<p>{item.subtitle}</p>
 					</div>
-					<div className="down">
-					<span>￥158</span><i>/</i><s>196</s>
-						<i className="iconfont icon-denglu"></i>
-						<b>12</b>
+					<div className="down clear">
+						<div className="list-price">
+							<span>￥{item.price}</span><i>/</i><s>{item.origin_price}</s>
+						</div>
+						<div className="list-buynum">
+							<i className="iconfont icon-denglu"></i>
+							<b>{item.buy_num}</b>
+						</div>
 					</div>
 
 				</li>
